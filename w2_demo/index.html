@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="_Ethan Paul_">
+    <meta name="description" content="W2 Demo">
+
+    <title>W2 | Demo</title>
+
+    <!--IN-DOCUMENT CSS below-->
+    <style>
+
+        div{
+            border:1px solid black;
+            margin:10px; /*adds 10px between element and those above, to the right, 
+            below, and to the left of it*/
+            padding:10px; /*adds space between element's border and it's content, all 4 sides*/
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <!--WRAPPER -> wraps around site content, like wrapping paper-->
+    <div id="wrapper">
+
+        <!--HEADING of PAGE-->
+        <h1>Ethan Paul</h1>
+
+        <!--NAVIGATION of PAGE-->
+        <div id="nav">
+            
+            <!--IN-PAGE 'JUMP' LINK-->
+            <a href="#bio">| BIO |</a>
+            <a href="#schools">| SCHOOLS |</a>
+            <a href="#hobbies">| HOBBIES |</a>
+            <a href="#footer">| Bottom of Page |</a>
+
+            <!--external (out of our site) link below-->
+            <a href="https://www.neit.edu/" target="_blank">| Visit NEIT! |</a>
+            <!--target="_blank" opens the link in a new tab-->
+
+        </div><!--/ #nav-->
+
+        <!--CONTENT: Bio, schools, hobbies - each their own div section-->
+        <!--BIO-->
+        <div id="bio">
+
+            <h2>About Me</h2>
+            <p>Copy <b>your</b> <i>bio</i> from the <u>Week 1</u> assignment in here!</p>
+
+        </div><!--/ #bio-->
+
+        <!--SCHOOLS-->
+        <div id="schools">
+
+            <h2>Schooling</h2>
+
+            <ol>
+                <li>Hopkins Hill Elementary</li>
+                <li>ASFMS</li>
+                <li>Coventry High School</li>
+            </ol>
+
+        </div><!--/ #schools-->
+
+        <!--HOBBIES-->
+        <div id="hobbies">
+
+            <h2>Hobbies</h2>
+
+            
+            <ul>
+                <li>Surfing</li>
+                <img src="images/surfImage.jpg" alt="Surfing Image" width="300px">
+                <li>Snowboarding</li>
+                <img src="images/snowboardImage.jpg" alt="Snowboarding Image" width="300px">
+                <li>Bouldering</li>
+                <img src="images/boulderingImage.jpg" alt="Bouldering Image" width="300px">
+                <li>Video Games</li>
+                <img src="images/gamingImage.jpg" alt="Video Game Image" width="300px">
+                <li>Biking</li>
+                <img src="images/bikingImage.jpg" alt="Biking Image" width="300px">
+            </ul>
+        </div><!--/ #hobbies-->
+
+
+        <!--FOOTER-->
+        <div id="footer">
+
+            <a href="#wrapper">Jump to Top!</a>
+            <p>&copy; E Paul | SE111 | 202630</p>
+
+            <!--
+            <img src="validation_screenshot.jpg" alt="validation screenshot">
+            
+            Take a screenshot of the w3c validator manual input with the green check and up to my name
+            
+            -->
+
+        </div><!--/ #footer-->
+
+    </div><!--/ #wrapper-->
+    
+</body>
+</html>
