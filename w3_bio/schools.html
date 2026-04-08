@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Ethan Paul">
+    <meta name="description" content="W3 | Multipage Bio Site"
+    
+    <!--IN-CLASS CSS copied from w3 demo-->
+    <style>
+        /*Write in CSS in here*/
+
+        /*Select element by TYPE - applies to all tags of that type*/
+
+        div {
+            border:1px solid black;
+            padding:10px;
+            margin:5px;
+        }
+
+        /*select an element by its ID - only applies to THAT element*/
+        #wrapper {
+            background-color: gray;
+            width:900px;
+            margin:auto; /*centers elements in page; auto equal left and right*/
+        }
+
+        .bg {
+            background-color: rgb(34,34,34);
+            color: white;
+        }
+    </style>    
+    
+    
+    <title>W3 | Multipage Bio Site</title>
+</head>
+<body>
+    
+    <!--Wrapper-->
+    <div id="wrapper">
+
+        <!--Header section-->
+        <div id="header" class="bg">
+            <h1>Ethan Paul - Schools</h1>
+        </div><!--/ #header-->
+
+
+        <!--Nav section-->
+        <div id="nav">
+
+            <!--Relative links-->
+            <a href="index.html">| HOME |</a>
+            <a href="schools.html">| SCHOOLS |</a>
+            <a href="hobbies.html">| HOBBIES |</a>
+
+            <!--In-page jump link-->
+            <a href="#footer">| Bottom of CURRENT Page |</a>
+
+        </div><!--/ #nav-->
+
+
+        <!--Horizontal Rule-->
+        <hr>
+
+
+        <!--Main content section-->
+        <div id="main-content">
+
+            <h2>Schools</h2>
+
+                <!--Ordered list required in schooling section-->
+                <ol>
+
+                    <li><strong>Hopkins Hill Elementary School</strong></li>
+                    <li style="list-style:none"><img src="images/hopkinsHillElementaryImage.jpeg" alt="Image of the front of Hopkins Hill Elementary School" style="width: 40%"></li>
+
+                    <li><strong>Alan Shawn Feinstein Middle School</strong></li>
+                    <li style="list-style:none"><img src="images/alanShawnFeinsteinMiddleSchool.jpeg" alt="Image of the front of Alan Shawn Feinstein Middle School" style="width: 40%"></li>
+
+                    <li><strong>Coventry High School</strong></li>
+                    <li style="list-style:none"><img src="images/coventryHighSchoolImage.jpg" alt="Image of the front of Coventry High School" style="width: 40%"></li>
+
+                </ol>
+
+
+        </div><!--/ #main-content-->
+
+
+        <!--Horizontal Rule-->
+        <hr>
+
+
+        <!--Footer section-->
+        <div id="footer" class="bg">
+            <p>&copy; E PAUL | SE111 | 202630</p> <br>
+            <a href="index.html#wrapper">| Top of HOME Page |</a>
+        </div><!--/ #footer-->
+
+    </div><!--/ #wrapper-->
+
+</body>
+</html>

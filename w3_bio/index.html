@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Ethan Paul">
+    <meta name="description" content="W3 | Multipage Bio Site"
+    
+    <!--IN-CLASS CSS copied from w3 demo-->
+    <style>
+        /*Write in CSS in here*/
+
+        /*Select element by TYPE - applies to all tags of that type*/
+
+        div {
+            border:1px solid black;
+            padding:10px;
+            margin:5px;
+        }
+
+        /*select an element by its ID - only applies to THAT element*/
+        #wrapper {
+            background-color: gray;
+            width:900px;
+            margin:auto; /*centers elements in page; auto equal left and right*/
+        }
+
+        .bg {
+            background-color: rgb(34,34,34);
+            color: white;
+        }
+    </style>    
+    
+    
+    <title>W3 | Multipage Bio Site</title>
+</head>
+<body>
+    
+    <!--Wrapper-->
+    <div id="wrapper">
+
+        <!--Header section-->
+        <div id="header" class="bg">
+            <h1>Ethan Paul - About Me</h1>
+        </div><!--/ #header-->
+
+
+        <!--Nav section-->
+        <div id="nav">
+
+            <!--Relative links-->
+            <a href="index.html">| HOME |</a>
+            <a href="schools.html">| SCHOOLS |</a>
+            <a href="hobbies.html">| HOBBIES |</a>
+
+            <!--In-page jump link-->
+            <a href="#footer">| Bottom of CURRENT Page |</a>
+
+        </div><!--/ #nav-->
+
+
+        <!--Horizontal Rule-->
+        <hr>
+
+
+        <!--Main content section-->
+        <div id="main-content">
+
+            <h2>Bio</h2>
+        
+
+            <img src="images/meImage.JPG" alt="Me at the Bouldering Gym" style="width: 50%">
+
+
+            <p>Hello, as stated above, my name is <b>Ethan Paul!</b> I was born and raised here in Rhode Island--specifically raised in Coventry by my mother. 
+            I have one sister and we all live together with my grandparents; furthermore, I still live in Coventry and plan to do so until I graduate from NEIT.
+            I was in a Career and Techical program at Coventry High School, where I was awarded <i>Cybersecurity Student of the 2025 class</i>--on top of the numerous other awards I earned through my efforts--
+            there I learned many things about cybersecurity. I was in around eight clubs, two of which were pretty cool, namely the <b>Secretary of State's Civic Leadership Program</b> where I was a Civic Liaison
+            representing my school and the <b>AFA CyberPatriot Club</b> where my team went on to win <u>first place in the New England Region</u> (<i>something we got recognized for by the Rhode Island General Assembly--I was on TV!</i>).
+            I have a bunch of hobbies, some of which I've talked about in class; however, they are things that bring me a lot of joy.
+            Through bouldering I've lost around <b>60ish pounds</b>, something that has shown great benefits to my health and that I hope to continue with. Thank you for reading this long paragraph (<i>a bit longer than 5 sentences</i>),
+            I hope it was helpful in learning more about <u>me!</u> :]</p>
+
+
+        </div><!--/ #main-content-->
+
+
+        <!--Horizontal Rule-->
+        <hr>
+
+
+        <!--Footer section-->
+        <div id="footer" class="bg">
+            <p>&copy; E PAUL | SE111 | 202630</p> <br>
+            <a href="index.html#wrapper">| Top of HOME Page |</a>
+        </div><!--/ #footer-->
+
+    </div><!--/ #wrapper-->
+
+</body>
+</html>

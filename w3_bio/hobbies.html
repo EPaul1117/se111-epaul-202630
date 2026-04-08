@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Ethan Paul">
+    <meta name="description" content="W3 | Multipage Bio Site"
+    
+    <!--IN-CLASS CSS copied from w3 demo-->
+    <style>
+        /*Write in CSS in here*/
+
+        /*Select element by TYPE - applies to all tags of that type*/
+
+        div {
+            border:1px solid black;
+            padding:10px;
+            margin:5px;
+        }
+
+        /*select an element by its ID - only applies to THAT element*/
+        #wrapper {
+            background-color: gray;
+            width:900px;
+            margin:auto; /*centers elements in page; auto equal left and right*/
+        }
+
+        .bg {
+            background-color: rgb(34,34,34);
+            color: white;
+        }
+    </style>    
+    
+    
+    <title>W3 | Multipage Bio Site</title>
+</head>
+<body>
+    
+    <!--Wrapper-->
+    <div id="wrapper">
+
+        <!--Header section-->
+        <div id="header" class="bg">
+            <h1>Ethan Paul - Hobbies</h1>
+        </div><!--/ #header-->
+
+
+        <!--Nav section-->
+        <div id="nav">
+
+            <!--Relative links-->
+            <a href="index.html">| HOME |</a>
+            <a href="schools.html">| SCHOOLS |</a>
+            <a href="hobbies.html">| HOBBIES |</a>
+
+            <!--In-page jump link-->
+            <a href="#footer">| Bottom of CURRENT Page |</a>
+
+        </div><!--/ #nav-->
+
+
+        <!--Horizontal Rule-->
+        <hr>
+
+
+        <!--Main content section-->
+        <div id="main-content">
+
+            <h2>Hobbies</h2>
+
+                <!--Unordered list required in the hobbies section-->
+                <ul>
+
+                
+                    <li><em>Surfing</em></li>
+                    <li style="list-style:none"><img src="images/surfingImage.jpg" alt="Surfing Image" style="width: 40%"></li>
+
+
+                
+                    <li><em>Snowboarding</em></li>
+                    <li style="list-style:none"><img src="images/snowboardingImage.jpg" alt="Snowboarding Image" style="width: 40%"></li>
+
+
+                
+                    <li><em>Bouldering</em></li>
+                    <li style="list-style:none"><img src="images/boulderingImage.jpg" alt="Bouldering Image" style="width: 40%"></li>
+
+
+                    <!--Link to an outside website of my rock climbing gym-->
+                    <li style="list-style:none"><a href="https://centralrockgym.com/warwick/" target="_blank">Link to my bouldering gym's website</a></li>
+            
+                </ul>
+
+
+        </div><!--/ #main-content-->
+
+
+        <!--Horizontal Rule-->
+        <hr>
+
+
+        <!--Footer section-->
+        <div id="footer" class="bg">
+            <p>&copy; E PAUL | SE111 | 202630</p> <br>
+            <a href="index.html#wrapper">| Top of HOME Page |</a>
+        </div><!--/ #footer-->
+
+    </div><!--/ #wrapper-->
+
+</body>
+</html>
