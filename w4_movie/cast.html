@@ -4,19 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="author" content="Ethan Paul">
-    <meta name="description" content="W4 Multipage Movie Site Review Assignment">
-
     <title><em>The SpongeBob SquarePants Movie</em></title>
 
     <!--Do CSS stuff later-->
 
+    <style>
 
+        body {
+            background-image: url("images/skyFlowerBackground.webp");
+            background-size: cover;
+        }
+
+        /*Copying dimensions that Katie used from papers*/
+        #container {
+            width: 980px;
+            padding: 20px;
+            margin: auto;
+
+            /*Different things that make the container element pop on the screen, I did some reasearch on the values so they are different from the example*/
+            border: 5px solid rgb(116, 71, 0); /*RGB value of Spongebob's pants*/
+            box-shadow: 0 0 20px black; /*Larger shadow to make the container pop, making it more cartoonish*/
+            border-radius: 20px; /*Slightly more rounded, I just liked the look a tiny bit more*/
+
+            background-color: rgba(255, 230, 52, 0.90); /*One of the colors of yellow used on Spongebob's color palette*/
+            color: black; /*Default, but made this way as to ensure inheritance later on may not be potentially impacted*/
+        }
+
+        /*Dimensions copied from Katie again because I'm lazy*/
+        #buttons {
+            width: 600px;
+            height: 60px;
+            margin: auto;
+
+
+        }
+
+        /*I'm going to stop saying that I copied dimensions but it is safe to assume that any special dimensions that would require math
+        were from the papers that Katie gave me--I'm too lazy to do the math myself, but at least I'm honest*/
+        .link {
+            width: 150px;
+            height: 50px;
+
+            /*Slightly altered due to the addition of a border around the link elements*/
+            margin-left: 22px;
+            margin-right: 22px;
+
+            text-decoration: none;
+            font-size: 30px;
+
+            float: left; /*I looked this up after copying down some dimensions because it wasn't explained in class*/
+            text-align: center;
+            line-height: 50px;
+
+            background-color: rgb(241, 48, 29); /*Spongebob tie color*/
+            color: black;
+
+            box-shadow: 0 0 15px black;
+
+            border: 1px solid black; /*I wanted a border to help maintain the sharp cartoonish edges*/
+            border-radius: 20px;
+        }
+
+        .link:hover {
+            background-image: url("images/bubbleLinkHover.webp");
+            
+            opacity: 0.8; /*Added this to make the element feel more transient when hovered above, I looked this up myself to add*/
+
+            background-size: 150px;
+            box-shadow: 0 0 15px rgb(11, 88, 160); /*No direct connection to Spongebob colors*/
+        }
+
+        .link:visited {
+            color: black;
+        }
+
+        #header {
+            text-align: center;
+            padding: 0;
+            margin-bottom: 0;
+        }
+
+        h1 {
+            font-size: 85px;
+            padding: 0;
+            margin: 0;
+
+            font-family: fantasy;
+        }
+
+        h2 {
+            font-size: 55px;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            background-color: rgb(241, 48, 29);
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            background-color:rgb(11, 88, 160);
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        .poster {
+            margin-left: 85px;
+            border: 5px solid black;
+            box-shadow: 0 0 10px black;
+        }
+
+    </style>
+
+    <meta name="author" content="Ethan Paul">
+    <meta name="description" content="W4 Multipage Movie Site Review Assignment">
+    <!--This is the cast.html page-->
 </head>
 <body>
     
     <div id="container">
 
+        <!--This hr was in the written description for the mainframe-->
         <hr>
 
         <!--Header section-->
@@ -29,9 +142,15 @@
         <!--Navigation section-->
         <div id="nav">
 
-            <a href="index.html">| Home |</a>
-            <a href="cast.html">| Cast |</a>
-            <a href="review.html">| Review |</a>
+            <!--internal nav div for css styling-->
+            <div id="buttons">
+
+                <!--Class assigned for CSS styling purposes-->
+                <a href="index.html" class="link">Home</a>
+                <a href="cast.html" class="link">Cast</a>
+                <a href="review.html" class="link">Review</a>
+
+            </div><!--/ #buttons-->
 
         </div><!--/ #nav-->
 
@@ -41,7 +160,7 @@
 
         <div id="content">
 
-            <h2>Cast</h2>
+            <h2><u>Cast</u></h2>
 
             <div class="character">
                 <h3>SpongeBob SquarePants</h3>
@@ -52,7 +171,7 @@
                 <p>Tom Kenny</p>
 
                 <hr>
-            </div><!--Internal copyable content div-->
+            </div><!--/ .character-->
 
             <div class="character">
                 <h3>Patrick Star</h3>
@@ -63,7 +182,7 @@
                 <p>Bill Fagerbakke</p>
 
                 <hr>
-            </div><!--Internal copyable content div-->
+            </div><!--/ .character-->
 
             <div class="character">
                 <h3>Squidward Tentacles</h3>
@@ -74,7 +193,7 @@
                 <p>Roger Bumpass</p>
 
                 <hr>
-            </div><!--Internal copyable content div-->
+            </div><!--/ .character-->
 
             <div class="character">
                 <h3>Eugene Krabs</h3>
@@ -85,7 +204,7 @@
                 <p>Clancy Brown</p>
 
                 <hr>
-            </div><!--Internal copyable content div-->
+            </div><!--/ .character-->
 
             <div class="character">
                 <h3>King Neptune</h3>
@@ -96,7 +215,7 @@
                 <p>Jeffrey Tambor</p>
 
                 <hr>
-            </div><!--Internal copyable content div-->
+            </div><!--/ .character-->
 
             <div class="character">
                 <h3>Sheldon Plankton</h3>
@@ -107,7 +226,7 @@
                 <p>Mr. Lawrence</p>
 
                 <hr>
-            </div><!--Internal copyable content div-->
+            </div><!--/ .character-->
 
                         <div class="character">
                 <h3>Princess Mindy</h3>
@@ -118,7 +237,7 @@
                 <p>Scarlett Johansson</p>
 
                 <hr>
-            </div><!--Internal copyable content div-->
+            </div><!--/ .character-->
 
                         <div class="character">
                 <h3>David Hasselhoff</h3>
@@ -128,7 +247,7 @@
                 <p>David Hasselhoff</p>
 
                 <hr>
-            </div><!--Internal copyable content div-->
+            </div><!--/ .character-->
 
         </div><!--/ #content-->
 
@@ -138,9 +257,12 @@
             
             <a href="#header">Back To Top</a>
 
-            <!--
-            <img src="" alt="">
-            -->
+            <br>
+            <br>
+
+            <!--This image was taken prior to attempting the extra credit assignment-->
+            <img src="images/w4CastValidatorImage.png" alt="cast.html validator image">
+
         </div><!--/ #footer-->
 
     </div><!--/ #container-->
