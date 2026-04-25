@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--The type of font we are using-->
+    <meta charset="UTF-8">
+    <!--Tells the -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ethan Paul">
+    <meta name="description" content="Default HTML Page for SE 111">
+    
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <title>Week 5 | Tables and Forms</title>
+</head>
+<body>
+    <!--Build your Table and Form here-->
+
+    <form method="GET" action="confirm.html">
+
+    <h1>Birthday Party Registration Form</h1>
+
+        <table>
+
+            <!--Header Row -- Holding the labels for the columns-->
+            <thead>
+
+                <tr>
+
+                    <!--Instructions said all other headings are h2, so I put these as h2 just in case even though they look different in the example pdf document-->
+                    <td>
+                        <h2>Labels</h2>
+                    </td>
+
+                    <td>
+                        <h2>Form Fields</h2>
+                    </td>
+
+                </tr>
+
+            </thead><!--End of thead-->
+
+
+
+
+
+
+            <!--tbody to hold the remainder of the form-->
+            <tbody>
+
+                <!--Row for Parent/Guardian Name-->
+                <tr>
+
+                    <td>
+                        <label for="gfirst">
+                            Parent/Guardian Name
+                        </label>
+                    </td>
+
+                    <!--Needs both first and last name fields in this data cell-->
+                    <td>
+                        <input type="text" required maxLength="20" name="gfirst" id="g-first" placeholder="First Name">
+
+                        <!--Line break because input is an in-line element-->
+                        <br>
+
+                        <input type="text" required maxLength="20" name="gfirst" id="g-last" placeholder="Last Name">
+                    </td>
+
+                </tr><!--End of Parent/Guardian Name Row-->
+
+                <!--Row for Child's First Name-->
+                <tr>
+
+                    <td>
+                        <label for="cfirst">
+                            Child's First Name
+                        </label>
+                    </td>
+
+                    <!--The placeholder in the specifications and the actual pdf image was different--I decided to use a space for proper grammar-->
+                    <td>
+                        <input type="text" required name="cfirst" id="c-first" placeholder="Child's First Name">
+                    </td>
+
+                </tr><!--End of Child's First Name Row-->
+
+                <!--Row for Child's Age-->
+                <tr>
+
+                    <td>
+                        <label for="age">
+                            Child's Age
+                        </label>
+                    </td>
+
+                    <td>
+                        <input type="number" required name="age" value="3">
+                    </td>
+
+                </tr><!--End of Child's Age Row-->
+
+
+
+
+                <!--DATE AND TIME HEADER-->
+                <tr>
+                    <td>
+                        <h2>
+                            Date and Time
+                        </h2>
+                    </td>
+
+                    <!--Left empty, but here to maintain looks-->
+                    <td></td>
+                </tr><!--End of Date and Time header-->
+
+
+
+
+
+                <!--Row for Date-->
+                <tr>
+
+                    <td>
+                        <label for="date">
+                            Date
+                        </label>
+                    </td>
+
+                    <td>
+                        <input type="date" required name="date">
+                    </td>
+
+                </tr><!--End of Date Row-->
+
+                <!--Row for Start Time-->
+                <tr>
+
+                    <td>
+                        <label for="time">
+                            Start Time
+                        </label>
+                    </td>
+
+                    <td>
+                        <input type="time" required name="time">
+                    </td>
+
+                </tr><!--End of Start Time Row-->
+
+                <!--Row for Number of Guests-->
+                <tr>
+
+                    <td>
+                        <label for="guests">
+                            Number of Guests
+                        </label>
+                    </td>
+
+                    <td>
+                        <input type="number" name="guests" value="5">
+                    </td>
+
+                </tr><!--End of Number of Guests Row-->
+
+
+
+
+
+                <!--FOOD HEADER-->
+                <tr>
+                    <td>
+                        <h2>
+                            Food
+                        </h2>
+                    </td>
+
+                    <!--Left empty, but here to maintain looks-->
+                    <td></td>
+                </tr><!--End of Food header-->
+
+
+
+
+                <!--Row for Size-->
+                <tr>
+
+                    <td>
+                        <label for="size">
+                            Size
+                        </label>
+                    </td>
+
+                    <!--Values visual to the user are outside of the input elements to the right-->
+                    <td>
+                        <input type="radio" name="size" value="sm">sm
+                        <input type="radio" name="size" value="md">md
+                        <input type="radio" name="size" value="lg">lg
+                    </td>
+
+                </tr><!--End of Size Row-->
+
+                <!--Row for Drinks-->
+                <tr>
+
+                    <td>
+                        <label for="drinks">
+                            Drinks
+                        </label>
+                    </td>
+
+                    <!--Told to not put the required attribute in the instructions-->
+                    <!--Also told to put a label to the right of each drink checkbox-->
+                    <td>
+                        <!--Only checkbox with the checked attribute set to true-->
+                        <input type="checkbox" name="drink1" checked="true" value="coke">
+                        <label for="drink1">Coke</label><br>
+
+                        <input type="checkbox" name="drink2" value="sprite">
+                        <label for="drink2">Sprite</label><br>
+
+                        <input type="checkbox" name="drink3" value="fruit punch">
+                        <label for="drink3">Fruit Punch</label><br>
+
+                        <input type="checkbox" name="drink4" value="lemonade">
+                        <label for="drink4">Lemonade</label><br>
+
+                        <input type="checkbox" name="drink5" value="iced tea">
+                        <label for="drink5">Iced Tea</label><br>
+                    </td>
+
+                </tr><!--End of Drinks Row-->
+
+                <!--Row for Cake-->
+                <tr>
+
+                    <td>
+                        <label for="cake">
+                            Cake
+                        </label>
+                    </td>
+
+                    <td>
+                        <select name="cake">
+                        
+                            <option selected>
+                                Chocolate
+                            </option>
+
+                            <option>
+                                Vanilla
+                            </option>
+
+                            <option>
+                                I'll bring my own
+                            </option>
+
+                        </select>
+                    </td>
+
+                </tr><!--End of Cake Row-->
+
+
+
+
+                <!--DECORATIONS HEADER-->
+                <tr>
+                    <td>
+                        <h2>
+                            Decorations
+                        </h2>
+                    </td>
+
+                    <!--Left empty, but here to maintain looks-->
+                    <td></td>
+                </tr><!--End of Decorations header-->
+
+
+
+
+
+                <!--Row for Color Scheme-->
+                <tr>
+
+                    <td>
+                        <label for="colors">
+                            Color Scheme
+                        </label>
+                    </td>
+
+                    <td>
+                        <input type="color" name="colors">
+                    </td>
+
+                </tr><!--End of Color Scheme Row-->
+
+                <!--Row for Additional Comments-->
+                <tr>
+
+                    <td>
+                        <label for="comments">
+                            Additional Comments
+                        </label>
+                    </td>
+
+                    <!--Textarea left blank intentionally, as to not cover the place holder or sneakliy input anything without user knowledge-->
+                    <td>
+                        <textarea placeholder="Please add any additional comments here" name="comments"></textarea>
+                    </td>
+
+                </tr><!--End of Additional Comments Row-->
+
+                <!--Row for Submit Button-->
+                <tr>
+
+                    <td>
+                        <!--Intentionally blank-->
+                    </td>
+
+                    <td>
+                        <input type="submit" value="submit">
+                    </td>
+
+                </tr><!--End of Submit Button Row-->
+
+            </tbody>
+
+        </table>
+
+    </form>
+</body>
+</html>
