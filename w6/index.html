@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Ethan Paul">
+    <meta name="description" content="W6 | JavaScript Pay Calculator">
+
+    <title>W6 | JavaScript Pay Calculator</title>
+</head>
+<body>
+    <!--h1 here as a good practice, to include at least 1 HTML element before script-->
+    <h1>W6 | JavaScript Pay Calculator</h1>
+
+    <!--Script tags holding the actual content for this week's assignment-->
+    <script>
+
+        /*
+        Variable Dictionary:
+            name - Holds user's name; input by user
+            hoursWorked - Holds the value for the amount of hours worked; input by the user
+            hourlyRate - Holds the value for the hourly rate; input by the user
+            taxRate - Holds the constant tax rate of 20%; 0.20
+            grossPay - Holds the calculated value by multiplying hoursWorked by hourlyRate
+            uncleSamShare - Holds the amount of taxes which will be taken from the gross pay; calculated using taxRate
+            netPay - Holds the net pay for the user; calculated by taking the uncleSamShare from grossPay
+        */
+
+        var taxRate = 0.2 //Constant tax rate described in the instructions of the assignment
+
+        //I added this because I thought it would be nice
+        var name = prompt(`What is your name? `)
+
+        //Instantiating variables with user input
+        var hoursWorked = Number(prompt(`\n\nHow many hours do you work in one week, ${name}?\n`)) * 2 //*2 is because it is a two week pay period, the prompt is only for 1 week
+        var hourlyRate = Number(prompt(`What is your hourly rate, ${name}?\n`)) //hourly rate doesn't change based on hours worked, so no *2
+
+        //Calculations of gross pay, taxes, and net pay; based upon previously prompted values from the user
+        var grossPay = hoursWorked * hourlyRate
+        var uncleSamShare = grossPay * taxRate
+        var netPay = grossPay - uncleSamShare
+
+        //Displaying to user and the console
+        //User
+        alert(`Calculations complete! Based on your input, ${name} -\n\nGross Pay: $${grossPay.toFixed(2)}\nUncle Sam's Share: $${uncleSamShare.toFixed(2)}\nNet Pay: $${netPay.toFixed(2)}\n\nComputations Complete!!! Thank you for using this service!`)
+        
+        //Console
+        console.log(`Gross Pay: $${grossPay.toFixed(2)}`)
+        console.log(`Uncle Sam's Share: $${uncleSamShare.toFixed(2)}`)
+        console.log(`Net Pay: $${netPay.toFixed(2)}`)
+
+        console.log(`\n\nComputations Complete!!! Thank you for using this service!`)
+
+    </script>
+</body>
+</html>
