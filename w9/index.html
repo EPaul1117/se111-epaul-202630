@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta content="author" description="Ethan Paul">
+<title>Week 2 Files</title>
+<style type="text/css">
+	.border{border:1px solid black;}
+</style>
+</head>
+
+<body>
+</body>
+
+<script type="text/javascript">
+	//Use this Array of objects to complete the assignment.
+	var people =[
+		{first:"Jason", last:"Vorhees", credit:"Friday the 13th"},
+		{first:"Freddy", last:"Krueger", credit:"A Nightmare on Elm Street" },
+		{first:"Roger", last:"Rabbit", credit:"Who Framed Roger Rabbit" },
+		{first:"Kevin", last:"McCallister", credit:"Home Alone" },
+		{first:"Godzilla", last:"King of The Monsters", credit:"Godzilla" },
+		{first:"Buzz", last:"Lightyear", credit:"Toy Story" },
+		{first:"Marion", last:"Cobretti", credit:"Cobra" }
+	]
+	
+	//Part 2
+	var body = document.querySelector(`body`)
+
+	//Part 3
+	for(let i = 0; i < people.length; i++)
+	{
+		//Part 4
+		//Part 4-1 and 4-2
+		var tempDiv = document.createElement(`div`)
+
+		//Part 4-3 and 4-4
+		tempDiv.setAttribute(`id`, String(i))
+		tempDiv.setAttribute(`class`, `border`)
+
+		//Part 5
+		for(let key in people[i])
+		{
+			//Part 5-1 and 5-2
+			var p = document.createElement(`p`)
+			var text = document.createTextNode(people[i][key])
+
+			//Part 5-3 and 5-4
+			p.appendChild(text)
+			tempDiv.appendChild(p)
+		}//Inner loop for accessing into objects
+
+		//Part 6
+		body.appendChild(tempDiv)
+
+	} //Outer loop for accessing into the array
+</script>
+
+</html>
